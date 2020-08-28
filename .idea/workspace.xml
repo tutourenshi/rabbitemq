@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02f66179-8653-422b-ae82-247422a65acc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/m1_simple/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq/target/classes/m1_simple/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/target/classes/m1_simple/Producer.class" afterDir="false" />
-    </list>
+    <list default="true" id="02f66179-8653-422b-ae82-247422a65acc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +70,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="settings.gitee" />
   </component>
   <component name="RunManager" selected="Application.Consumer">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -121,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598596362673</updated>
       <workItem from="1598596365228" duration="343000" />
-      <workItem from="1598596718456" duration="4349000" />
+      <workItem from="1598596718456" duration="4576000" />
     </task>
     <task id="LOCAL-00001" summary="MQ">
       <created>1598599636834</created>
@@ -137,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598599699670</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="MQ">
+      <created>1598601382735</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598601382735</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,14 +195,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1471" height="228" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598600587190" />
-    <state x="319" y="0" key="SettingsEditor" timestamp="1598596696686">
+    <state x="319" y="0" key="SettingsEditor" timestamp="1598601506003">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="319" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598596696686" />
-    <state x="260" y="78" key="Vcs.Push.Dialog.v2" timestamp="1598599702501">
+    <state x="319" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598601506003" />
+    <state x="260" y="78" key="Vcs.Push.Dialog.v2" timestamp="1598601443041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="260" y="78" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598599702501" />
+    <state x="260" y="78" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598601443041" />
     <state x="0" y="0" key="new project wizard" timestamp="1598596518967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
