@@ -18,9 +18,8 @@ public class Consumer {
         DeliverCallback callback = new DeliverCallback() {
             @Override
             public void handle(String consumerTag, Delivery message) throws IOException {
-                String msg = new String(message.getBody(), "UTF-8");
+                String msg = new String(message.getBody());
                 System.out.println("收到: "+msg);
-
                 //遍历字符串中的字符,每个点使进程暂停一秒
                 for (int i = 0; i < msg.length(); i++) {
                     if (msg.charAt(i)=='.') {
@@ -30,6 +29,7 @@ public class Consumer {
                         }
                     }
                 }
+                c.basicAck(message.getEnvelope().getDeliveryTag(),false);
                 System.out.println("处理结束");
             }
         };
@@ -41,6 +41,8 @@ public class Consumer {
             }
         };
 
-        c.basicConsume("helloworld", true, callback, cancel);
+        c.basicQos(1);
+
+        c.basicConsume("helloworld", false, callback, cancel);
     }
 }

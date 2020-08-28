@@ -5,7 +5,7 @@ import com.rabbitmq.client.ConnectionFactory;
 
 import java.util.Scanner;
 
-public class Producre {
+public class Producer {
     public static void main(String[] args)throws Exception {
         //创建连接工厂,并设置连接信息
         ConnectionFactory f = new ConnectionFactory();
