@@ -1,8 +1,11 @@
-package m2_work;
+package m3_publishsubstribe;
 
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
+import java.util.UUID;
+
+import static java.util.UUID.randomUUID;
 
 public class Consumer {
     public static void main(String[] args) throws Exception {
@@ -18,8 +21,21 @@ public class Consumer {
          *   -autoDelete: 当最后一个消费者断开后,是否删除队列
          *   -arguments: 其他参数
          */
-        c.queueDeclare("helloworld",true,false,false,null);
-        System.out.println("等待接收数据");
+        c.exchangeDeclare("logs",BuiltinExchangeType.FANOUT.getType());
+
+        //自己给参数
+//        String queue=UUID.randomUUID().toString();
+//        c.queueDeclare(queue,
+//                false,
+//                true,
+//                true,
+//                null);
+        //让服务器自己命名
+        String queue=c.queueDeclare().getQueue();
+
+        c.queueBind(queue,"logs","");
+
+
 
         //收到消息后用来处理消息的回调对象
         DeliverCallback callback = new DeliverCallback() {
@@ -47,9 +63,6 @@ public class Consumer {
             public void handle(String consumerTag) throws IOException {
             }
         };
-
-        c.basicQos(1);
-
-        c.basicConsume("helloworld", false, callback, cancel);
+        c.basicConsume(queue,true,callback,cancel);
     }
 }

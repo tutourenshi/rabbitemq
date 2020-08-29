@@ -20,10 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02f66179-8653-422b-ae82-247422a65acc" name="Default Changelist" comment="MQ">
+      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/m3_publishsubstribe/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/m3_publishsubstribe/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/m4_routing/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/util/Connutil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq/src/main/java/m1_simple/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/m1_simple/Consumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq/src/main/java/m2_work/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/m2_work/Consumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq/src/main/java/m2_work/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/m2_work/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/target/classes/m1_simple/Consumer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/target/classes/m1_simple/Consumer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/target/classes/m1_simple/Consumer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/target/classes/m1_simple/Consumer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/target/classes/m1_simple/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/target/classes/m1_simple/Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/target/classes/m2_work/Consumer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/target/classes/m2_work/Consumer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/target/classes/m2_work/Consumer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/target/classes/m2_work/Consumer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/target/classes/m2_work/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/target/classes/m2_work/Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/target/classes/m2_work/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/target/classes/m2_work/Producer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,34 +88,13 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.gitee" />
   </component>
-  <component name="RunManager" selected="Application.m2-Consumer">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="m3_publishsubstribe" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.m3-Consumer">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="m1_simple.Consumer" />
-      <module name="rabbitmq" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="m1_simple.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="m1_simple.Producer" />
-      <module name="rabbitmq" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="m1_simple.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="m1-Consumer" type="Application" factoryName="Application" singleton="false" temporary="true">
       <option name="MAIN_CLASS_NAME" value="m1_simple.Consumer" />
       <module name="rabbitmq" />
       <extension name="coverage">
@@ -150,18 +140,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="m3-Consumer" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="m3_publishsubstribe.Consumer" />
+      <module name="rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="m3_publishsubstribe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="m3-Producer" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="m3_publishsubstribe.Producer" />
+      <module name="rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="m3_publishsubstribe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.m1-Consumer" />
+      <item itemvalue="Application.m1-Producer" />
+      <item itemvalue="Application.Consumer" />
       <item itemvalue="Application.m2-Consumer" />
       <item itemvalue="Application.m2-Producer" />
-      <item itemvalue="Application.m1-Producer" />
+      <item itemvalue="Application.m3-Producer" />
+      <item itemvalue="Application.m3-Consumer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.m3-Producer" />
+        <item itemvalue="Application.m3-Consumer" />
         <item itemvalue="Application.m2-Consumer" />
         <item itemvalue="Application.m2-Producer" />
-        <item itemvalue="Application.m1-Consumer" />
-        <item itemvalue="Application.Producer" />
+        <item itemvalue="Application.Consumer" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +195,9 @@
       <option name="presentableId" value="Default" />
       <updated>1598596362673</updated>
       <workItem from="1598596365228" duration="343000" />
-      <workItem from="1598596718456" duration="13215000" />
+      <workItem from="1598596718456" duration="13472000" />
+      <workItem from="1598612568541" duration="793000" />
+      <workItem from="1598685212245" duration="6767000" />
     </task>
     <task id="LOCAL-00001" summary="MQ">
       <created>1598599636834</created>
@@ -241,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598610136904</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="MQ">
+      <created>1598612310285</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598612310285</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +285,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -268,18 +297,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="120" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1598596373153" />
-    <state x="147" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598604655335">
+    <state x="147" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598690520885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1598604655335" />
+    <state x="147" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1598690520885" />
     <state x="360" y="151" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1598604573267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="360" y="151" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1598604573267" />
-    <state x="495" y="106" key="FileChooserDialogImpl" timestamp="1598596694373">
+    <state x="495" y="106" key="FileChooserDialogImpl" timestamp="1598612761776">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="495" y="106" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598596694373" />
+    <state x="495" y="106" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598612761776" />
     <state x="591" y="286" key="Gitee.ShareDialog" timestamp="1598596412395">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -288,30 +317,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="627" y="43" key="Gitee.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1598596418542" />
-    <state width="1471" height="194" key="GridCell.Tab.0.bottom" timestamp="1598610663182">
+    <state width="857" height="152" key="GridCell.Tab.0.bottom" timestamp="1598690503535">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1471" height="194" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598610663182" />
-    <state width="1471" height="194" key="GridCell.Tab.0.center" timestamp="1598610663182">
+    <state width="857" height="152" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598690503535" />
+    <state width="857" height="152" key="GridCell.Tab.0.center" timestamp="1598690503534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1471" height="194" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598610663182" />
-    <state width="1471" height="194" key="GridCell.Tab.0.left" timestamp="1598610663182">
+    <state width="857" height="152" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598690503534" />
+    <state width="857" height="152" key="GridCell.Tab.0.left" timestamp="1598690503534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1471" height="194" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598610663182" />
-    <state width="1471" height="194" key="GridCell.Tab.0.right" timestamp="1598610663182">
+    <state width="857" height="152" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598690503534" />
+    <state width="857" height="152" key="GridCell.Tab.0.right" timestamp="1598690503535">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1471" height="194" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598610663182" />
+    <state width="857" height="152" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598690503535" />
     <state x="319" y="0" key="SettingsEditor" timestamp="1598601506003">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="319" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598601506003" />
-    <state x="260" y="78" key="Vcs.Push.Dialog.v2" timestamp="1598610139035">
+    <state x="260" y="78" key="Vcs.Push.Dialog.v2" timestamp="1598612312757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="260" y="78" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598610139035" />
+    <state x="260" y="78" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598612312757" />
     <state x="0" y="0" key="new project wizard" timestamp="1598596518967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -320,5 +349,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="557" y="150" key="svn.repositoryBrowser/0.0.1536.824@0.0.1536.824" timestamp="1598596406153" />
+    <state x="784" y="303" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1598689172715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="784" y="303" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1598689172715" />
   </component>
 </project>

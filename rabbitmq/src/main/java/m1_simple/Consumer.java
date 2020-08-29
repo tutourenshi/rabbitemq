@@ -22,7 +22,7 @@ public class Consumer {
          *   -autoDelete: 当最后一个消费者断开后,是否删除队列
          *   -arguments: 其他参数
          */
-        c.queueDeclare("helloworld",false,false,false,null);
+        c.queueDeclare("helloworld",true,false,false,null);
         System.out.println("等待接收数据");
 
         DeliverCallback callback=new DeliverCallback() {

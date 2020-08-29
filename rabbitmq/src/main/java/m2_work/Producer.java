@@ -23,7 +23,7 @@ public class Producer {
          *   -autoDelete: 当最后一个消费者断开后,是否删除队列
          *   -arguments: 其他参数
          */
-        c.queueDeclare("helloworld",false,false,false,null);
+        c.queueDeclare("helloworld",true,false,false,null);
         while (true) {
             //控制台输入的消息发送到rabbitmq
             System.out.print("输入消息: ");
